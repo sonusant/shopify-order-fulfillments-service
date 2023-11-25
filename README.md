@@ -30,6 +30,8 @@ Shopify now strongly recommends managing fulfillments via **Fulfillment Orders**
 
 Our system queries the `fulfillment_orders.json` endpoint to find the work assigned to our specific location, and then fulfills it using `fulfillments.json`.
 
+**Note on Tracking**: According to Shopify's API documentation, providing a proper courier company name (in the `tracking_company` field) along with the `tracking_number` allows Shopify to automatically generate the correct tracking URL for the customer. You do not need to construct or provide the tracking URL yourself.
+
 ## Required Shopify Scopes
 
 The app or custom token used by this function requires the following access scopes:
